@@ -1,12 +1,72 @@
 /*General Styles*/
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+}
+
 /*Navigation Bar*/
 
+.divNav {
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+}
 
+.navUL li {
+    color: white;
+    display: inline;
+    padding: 30px;
+}
 
 /*Banner*/
 
+
+
 /*Headings*/
+.imgHeading {
+    width: 30%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    border: 5px solid black;
+    border-radius: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #eb1b0c;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    border-radius: 5px 5px;
+}
+
+.container:hover .overlay {
+    transform: scale(1);
+}
+
+.Text {
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 /*Fonts*/
 
