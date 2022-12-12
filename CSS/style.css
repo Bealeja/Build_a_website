@@ -37,6 +37,11 @@ ul {
 
 
 /*****************************************Headings**************************************/
+
+/*Tasks
+* Make piano rift of moving headings
+*/
+
 /*Container with image*/
 .container {
     position: relative;
@@ -105,29 +110,47 @@ ul {
 
 /***********************************Colours*************************************/
 
+/*Tasks
+* Make piano rift of fading backgrounds
+*/
+
 /*Change text color on hover*/
 .Text li {
     width: 90%;
+    color: whitesmoke;
 }
 
 #red {
     background-color: red;
-    transition: background-color 1s;
 }
 
-.container:hover .redtext:hover #red {
-    background-color: transparent;
-    transition: background-color 1s;
-    cursor: pointer;
-}
-
-.orange {
+#orange {
     background-color: orange;
 }
 
-/*Fonts*/
+#yellow {
+    background-color: yellow;
+}
 
-/*Buttons*/
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#indigo {
+    background-color: indigo;
+}
+
+#violet {
+    background-color: violet;
+}
+
+/***************************Buttons*******************************/
+
+
 
 /*Fonts*/
 
