@@ -23,76 +23,92 @@ p {
     padding: 30px;
 }
 
+li {
+    font-size: 18px;
+    padding: 7px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /*Banner*/
 
 
 
-/*Headings*/
+/*****************************************Headings**************************************/
+/*Container with image*/
 .container {
     position: relative;
     width: 50%;
+    height: 100%;
     border: 5px solid black;
     border-radius: 10px 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
 }
 
 .imgHeading {
+    position: relative;
     width: 30%;
-    height: auto;
-    transition: .5s ease;
+    transition: 2s ease;
 }
 
 .container:hover .imgHeading {
     transform: translate(-100%, 0);
 }
 
+/*Animation with overlay*/
 .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
     margin-left: 50%;
     margin-right: auto;
-    background-color: #eb1b0c;
+    background-color: black;
     overflow: hidden;
     width: 50%;
     height: 100%;
-    transform: scale(1, 0);
     border-radius: 5px 5px;
-    z-index: -5;
-    transition-delay: 1s;
+    z-index: -2;
+}
+
+.fadingEffect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: white;
+    z-index: -1;
+    transition: width 0.5s;
 
 }
 
-.container:hover .overlay {
-    transform: scale(1);
-    animation: showHide 3s linear;
-    animation-delay: 1s;
+.container:hover .fadingEffect {
+    transition: width 2s;
+    transition-delay: 0.5s;
+    width: 0%;
 }
 
-@keyframes showHide {
-    0% {
-        width: 0%
-    }
+/*Heading text format and animation*/
 
-    40% {
-        width: 50%
-    }
-
-    60% {
-        width: 50%;
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-.Text {
+.container .Text {
     color: white;
     position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     text-align: center;
+}
+
+/***********************************Colours*************************************/
+
+/*Change text color on hover*/
+.red {
+    background-color: red;
+    width: 100%;
+    transform:
 }
 
 /*Fonts*/
