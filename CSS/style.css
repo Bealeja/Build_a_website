@@ -72,6 +72,7 @@ ul {
     height: 100%;
     border-radius: 5px 5px;
     z-index: -2;
+    text-align: center;
 }
 
 .fadingEffect {
@@ -99,15 +100,29 @@ ul {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    text-align: center;
+
 }
 
 /***********************************Colours*************************************/
 
 /*Change text color on hover*/
-.red {
+.Text li {
+    width: 90%;
+}
+
+#red {
     background-color: red;
-    width: 100%;
+    transition: background-color 1s;
+}
+
+.container:hover .redtext:hover #red {
+    background-color: transparent;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.orange {
+    background-color: orange;
 }
 
 /*Fonts*/
