@@ -28,11 +28,6 @@ p {
 
 
 /*Headings*/
-.imgHeading {
-    width: 30%;
-    height: auto;
-}
-
 .container {
     position: relative;
     width: 50%;
@@ -42,22 +37,54 @@ p {
     margin-right: auto;
 }
 
+.imgHeading {
+    width: 30%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.container:hover .imgHeading {
+    transform: translate(-100%, 0);
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    margin-left: 50%;
+    margin-right: auto;
     background-color: #eb1b0c;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    transform: scale(0);
-    transition: .3s ease;
+    transform: scale(1, 0);
     border-radius: 5px 5px;
+    z-index: -5;
+    transition-delay: 1s;
+
 }
 
 .container:hover .overlay {
     transform: scale(1);
+    animation: showHide 3s linear;
+    animation-delay: 1s;
+}
+
+@keyframes showHide {
+    0% {
+        width: 0%
+    }
+
+    40% {
+        width: 50%
+    }
+
+    60% {
+        width: 50%;
+    }
+
+    100% {
+        width: 50%;
+    }
 }
 
 .Text {
